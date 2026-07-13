@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: row;
+}
 .sidebar {
   background-color: rgb(15, 172, 224);
   width: 17%;
@@ -23,10 +27,93 @@
   width: 10.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 .sidebar h2:hover {
   background-color: lightblue;
+  cursor: pointer;
 }
 .sidebarGroup1 {
   padding-bottom: 5rem;
+}
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.headerTopRow {
+  display: flex;
+  flex-direction: row;
+}
+.headerBottomRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(236, 236, 236);
+}
+.projects {
+  width: 70%;
+  height: 85vh;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.card {
+  border: 1px solid black;
+  width: 23vw;
+  height: 17vh;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.card h1 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+.card p {
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-top: 2vh;
+  padding-right: 2rem;
+}
+.cardBottom button {
+  margin-left: 1rem;
+}
+
+.sidebar2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 85vh;
+}
+.announcements {
+  height: 50%;
+}
+.trending {
+  height: 50%;
 }
