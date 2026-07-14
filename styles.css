@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 body {
   display: flex;
@@ -67,8 +68,8 @@ body {
   width: 100%;
   height: 15vh;
   background-color: white;
-  border-bottom: 1px solid black;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .headerButton {
   height: 2rem;
@@ -159,14 +160,23 @@ body {
 }
 .projects {
   width: 70%;
-  height: 85vh;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.projects h2 {
+  margin-left: 3rem;
+  margin-bottom: 0;
 }
 
 .cardsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .card {
   border: none;
@@ -197,7 +207,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   float: right;
-  padding-right: 2rem;
+  padding-right: 0rem;
 }
 .cardBottom button {
   margin-left: 1rem;
@@ -222,13 +232,23 @@ body {
 }
 .announcements {
   height: 50%;
-  border: 1px solid black;
+  width: 23rem;
+  margin-top: 1rem;
+}
+.announcements h2 {
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
 }
 .announcementsContainer {
   background-color: white;
   border-radius: 1rem;
-  padding: 2rem;
-  margin: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  filter: drop-shadow(0px 1px 4px gray);
+  width: 20rem;
 }
 .announce {
   border-bottom: solid 2px lightgray;
@@ -236,13 +256,41 @@ body {
   margin-bottom: 1rem;
 }
 .announce h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .announce p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
   width: 75%;
 }
 .trending {
-  height: 50%;
+  height: 30vh;
+  background-color: white;
+  border-radius: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  width: 20rem;
+  filter: drop-shadow(0px 1px 4px gray);
+}
+#trendingTitle {
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+}
+.trendingPiece {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 0.4rem;
+}
+.trendingPicture {
+  height: 3.5rem;
+  padding-right: 2rem;
+}
+.trendingName {
+  font-size: 1.2rem;
 }
